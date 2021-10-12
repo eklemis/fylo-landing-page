@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+footer{
+    border: green dotted 1px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+nav div.icon{
+    margin-left: 15px;
+}
+nav div.menu{
+    display: flex;
+    column-gap: 25px;
+    justify-self: flex-end;
+    justify-items: flex-end;
+}
+nav div.menu a{
+    font-size: 14px;
+    color: #1e1c33;
+    font-weight: 500;
+    text-decoration: none;
+}
+div.files-sec-image{
+    background-image: url('./images/illustration-1.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vw;
+
+    width: 100%;
+    height: 400px;
+}
+div.filing{
+    margin-bottom: 100px;
+}
+div.filing section.filing-section{
+    padding:0px 5%;
+}
+div.filing h1{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.6;
+    margin: 2.5vh 0px;
+    text-align: center;
+}
+div.filing p{
+    line-height: 1.6;
+    margin: 4vh 0px;
+    margin-top: 0px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    align-items: center;
+}
+form .form-item{
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 700;
+    width: 90%;  
+}
+form .form-item[type="email"]{
+    border-width: .25pt;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+
+    padding: 5px 15px;
+}
+form .form-item[type="submit"]{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: #2f65f9;
+    border-width: 0px;
+}
+div.productive{
+    background-color: #f9f8fe;
+    margin-bottom: 0px;
+}
+div.productive-sec-image::before{
+    content: '';
+    margin-top: -50px;
+    display: block;
+    position: absolute;
+    background-image: url('./images/bg-curve-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw 80px;
+    height: 80px;
+    width: 100%;
+}
+div.productive-sec-image{
+    position: relative;
+    background-image: url('./images/illustration-2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 100%;
+    height: 400px;
+}
+section.productive-section{
+    padding:0px 5vw;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+section.productive-section h1{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6;
+    margin: 2.5vh 0px;
+}
+section.productive-section p{
+    line-height: 1.6;
+    margin-bottom: 2vh;
+    color: #676477;
+}
+section.productive-section div.see-how{
+    display: flex;
+    border-bottom-width: 1.5pt;
+    border-bottom-color: #4f998b;
+    border-bottom-style: solid;
+    column-gap: 10px;
+    /*box-shadow: 0px 1px 3px 1px rgba(79, 153, 139, 0.23);*/
+    padding-bottom: 5px;
+    align-items: center;
+
+    margin-top: 2.5vh;
+    margin-bottom: 5vh;
+}
+section.productive-section div.see-how img{
+    width: 25px;
+    height: 25px;
+}
+section.productive-section a{
+    text-decoration: none;
+    color: #4f998b;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+section.productive-section div.quotes{
+    background-color: white;
+    margin: 0px 5vw;
+    margin-bottom: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+    border-radius: 5px;
+
+    padding: 35px 35px;
+}
+section.productive-section div.quotes img.icon-quote{
+    width: 20px;
+    height: 20px;
+
+    margin-bottom: 10px;
+}
+section.productive-section div.quotes div.quoter{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr;
+
+    margin-top: 25px;
+
+    height: 50px;
+}
+div.quoter img{
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    margin-top: 8px;
+}
+div.quoter h2{
+    grid-row: 1;margin-left: 2vw;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 2vw;
+
+    font-size: 18px;
+}
+div.quoter span{
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 0px;
+    margin-left: 2vw;
+
+    font-size: 11px;
+    font-weight: 700;
+    color: #615e73;
+}
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+footer section.early-access{
+    background-color: #575989;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    padding: 10vw 8vw;
+}
+footer section.early-access h1{
+    color: white;
+    margin-bottom: 20px;
+}
+footer section.early-access p{
+    color: white;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+}
+form.bottom-form{
+    width: 90%;
+}
+div.footer{
+    background-color: #07043b;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 80px;
+
+    row-gap: 50px;
+}
+div.footer svg{
+    padding-left: 8vw;
+}
+div.footer .footer-group{
+    padding-left: 8vw;
+}
+div.footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+div.footer .footer-group:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+div.footer-item-box{
+    display: flex;
+    column-gap: 15px;
+    align-items: stretch;
+}
+div.footer .footer-group:nth-child(3){
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 15px;
+}
+div.footer .footer-group:nth-child(4){
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 15px;
+}
+div.footer .footer-group:nth-child(5){
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted red;
+
+    column-gap: 15px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
