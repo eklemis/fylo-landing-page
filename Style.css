@@ -37,6 +37,9 @@ nav div.menu a{
     font-weight: 500;
     text-decoration: none;
 }
+div.filing{
+    margin-bottom: 200px;
+}
 div.files-sec-image{
     background-image: url('./images/illustration-1.svg');
     background-repeat: no-repeat;
@@ -45,9 +48,6 @@ div.files-sec-image{
     width: 80%;
     height: 59.2vw;
     margin: 0px auto;
-}
-div.filing{
-    margin-bottom: 200px;
 }
 div.filing section.filing-section{
     padding:0px 5%;
@@ -99,17 +99,17 @@ div.productive{
     background-color: #f9f8fe;
     margin-bottom: 0px;
 }
-div.productive-sec-image::before{
+div.productive::before{
     content: '';
     position: absolute;
-    left: -10vw;   
+    left: 0;   
     margin-top: -80px;
     display: block;
     background-image: url('./images/bg-curve-mobile.svg');
     background-repeat: no-repeat;
     background-size: 100vw 80px;
     height: 80px;
-    width: 100vw;
+    width: 100%;
 }
 div.productive-sec-image{
     position: relative;
@@ -248,19 +248,26 @@ footer section.early-access p{
 form.bottom-form{
     width: 90%;
 }
+div.logo{
+    padding-top: 4vw;
+    background-color: #07043b;
+    margin-bottom: 0px;
+}
+div.logo svg{
+    margin-left: 8vw;
+}
 div.footer{
+    margin-top: 0px;
     background-color: #07043b;
     width: 100%;
     display: flex;
     flex-direction: column;
 
-    padding-top: 80px;
+    padding-top: 25px;
 
     row-gap: 50px;
 }
-div.footer svg{
-    padding-left: 8vw;
-}
+
 div.footer .footer-group{
     padding-left: 8vw;
 }
@@ -269,7 +276,7 @@ div.footer a{
     color: white;
     font-weight: 400;
 }
-div.footer .footer-group:nth-child(2){
+div.footer .footer-group:nth-child(1){
     display: flex;
     flex-direction: column;
     row-gap: 15px;
@@ -279,6 +286,12 @@ div.footer-item-box{
     column-gap: 15px;
     align-items: stretch;
 }
+div.footer .footer-group:nth-child(2){
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 15px;
+}
 div.footer .footer-group:nth-child(3){
     display: flex;
     flex-direction: column;
@@ -286,12 +299,6 @@ div.footer .footer-group:nth-child(3){
     row-gap: 15px;
 }
 div.footer .footer-group:nth-child(4){
-    display: flex;
-    flex-direction: column;
-
-    row-gap: 15px;
-}
-div.footer .footer-group:nth-child(5){
     padding-left: 0px;
     display: flex;
     align-items: center;
@@ -302,3 +309,100 @@ div.footer .footer-group:nth-child(5){
 .attribution { font-size: 11px; text-align: center; }
 p.attribution{ color: white; }
 p.attribution a{ color: yellow; }
+div.attribution{
+    width: 100%;
+    background-color: #07043b;
+}
+
+@media only screen and (min-width: 768px) {
+    div.filing{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    div.files-sec-image{
+        width: 40%;
+        height: 29.6vw;
+
+        background-size: 40vw 29.6vw;
+        margin-top: -8vh;
+    }
+    div.filing section.filing-section{
+        width: 50%;
+    }
+    div.filing h1, div.filing p{
+        text-align: left;
+    }
+    form{
+        flex-direction: row;
+        column-gap: 1vw;
+    }
+    form .form-item{
+        width: 24.5vw;
+    }
+    div.productive{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    div.productive-sec-image{
+        width: 40%;
+        height: 30.16vw;
+
+        background-size: 40vw 30.16vw;
+
+        margin-top: 15vh;
+    }
+    section.productive-section{
+        width: 50%;
+        align-items: flex-start;
+    }
+    section.productive-section h1, section.productive-section p{
+        text-align: left;
+    }
+    section.productive-section div.quotes{
+        margin-left: 0px;
+    }
+    footer section.early-access{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        column-gap: 200px;
+    }
+    footer section.early-access h1{
+        text-align: left;
+        grid-row: 1;
+        grid-column: 1;
+    }
+    footer section.early-access p{
+        text-align: left;
+        grid-row: 2;
+        grid-column: 1;
+    }
+    form.bottom-form{
+        grid-row: 1 / span 2;
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+    form.bottom-form input[type="email"]{
+        width: 35vw;
+    }
+    form.bottom-form button{
+        width: 15vw;
+    }
+    div.footer{
+        flex-direction: row;
+        padding-bottom: 50px;
+
+        align-items: flex-start;
+
+        column-gap: 10vw;
+        padding-left: 8vw;
+    }
+    div.footer .footer-group{
+        padding-left: 0px;
+    }
+}
+
